@@ -1,0 +1,25 @@
+pontos = 0
+telefone = input('A. Telefonou para a vítima?: ')
+if telefone.lower() == 'sim': 
+    pontos += 1 
+local = input('B. Esteve perto do local do crime?: ')
+if local.lower() == 'sim':
+    pontos += 1
+morar = input('C. Mora perto da vítima?: ')
+if morar.lower() == 'sim':
+    pontos += 1
+dever = input('D. Devia para vítima?: ')
+if dever.lower() == 'sim':
+    pontos += 1
+trabalho = input('E. Já trabalhou com a vítima?: ')
+if trabalho.lower() == 'sim':
+    pontos += 1
+
+if pontos == 2:
+    print('Suspeito')
+elif pontos == 3 or pontos == 4:
+    print('Cumplice')
+elif pontos > 4: 
+    print('Assassino')
+else:
+    print('Inocente')
