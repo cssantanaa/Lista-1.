@@ -1,5 +1,5 @@
 letra = input('Digite uma letra: ')
-if letra in "aeiou":
+if letra.lower() in "aeiou":
     print("Vogal")
 else:
     print("Consoante")    
